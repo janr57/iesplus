@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=(__VERSION)
+Name=(__PROGRAM_NAME)
+Name[es_ES]=(__PROGRAM_NAME)
+Comment=A classroom notebook for teachers
+Comment[es_ES]=Un cuaderno de clase para profesores
+Exec=(__PROGRAM) %f
+Icon=(__IMAGEDIR)/(__ICON)
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Utility;Application;
+OnlyShowIn=GNOME;Unity;
+X-GNOME-Keywords=(__PROGRAM_NAME);Class;Classroom;Notebook;Teacher;

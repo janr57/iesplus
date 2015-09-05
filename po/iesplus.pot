@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iesplus 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-05 12:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.c:683
+msgid "A class notebook for teachers."
+msgstr ""
+
+#: src/main.c:730
+msgid "About IesPlus"
+msgstr ""
+
+#: src/main.c:300
+msgid "Are you sure you want to quit IesPlus?"
+msgstr ""
+
+#: src/main.c:448
+msgid "New Database"
+msgstr ""
+
+#: src/main.c:302
+msgid "Question"
+msgstr ""
+
+#: src/main.c:192
+msgid "_About"
+msgstr ""
+
+#: src/main.c:427 src/main.c:593
+msgid "_Cancel"
+msgstr ""
+
+#: src/main.c:188
+msgid "_Close"
+msgstr ""
+
+#: src/main.c:173
+msgid "_Database"
+msgstr ""
+
+#: src/main.c:174
+msgid "_Help"
+msgstr ""
+
+#: src/main.c:172
+msgid "_IesPlus"
+msgstr ""
+
+#: src/main.c:186
+msgid "_New"
+msgstr ""
+
+#: src/main.c:187 src/main.c:428 src/main.c:594
+msgid "_Open"
+msgstr ""
+
+#: src/main.c:182
+msgid "_Quit"
+msgstr ""

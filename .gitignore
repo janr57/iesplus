@@ -1,0 +1,19 @@
+# Copyright (C) 2015 José A. Navarro Ramón <josea.navarro@murciaeduca.es>
+
+# Hidden files except '.gitignore'
+.*
+!/.gitignore
+
+# C intermediate files
+*.o
+*.i
+
+# Image files
+images/*.png
+images/*.svg
+
+# Desktop files
+*.desktop
+
+# Program
+iesplus
