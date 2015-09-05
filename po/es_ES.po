@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iesplus 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 12:24+0200\n"
+"POT-Creation-Date: 2015-09-05 15:33+0200\n"
 "PO-Revision-Date: 2015-09-05 12:34+0200\n"
 "Last-Translator: José A. Navarro <josea.navarro@murciaeduca.es>\n"
 "Language-Team: Español; Castellano <josea.navarro1@gmail.com>\n"
@@ -19,58 +19,58 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: src/main.c:683
+#: src/main.c:722
 msgid "A class notebook for teachers."
 msgstr "Cuaderno de clase para profesores"
 
-#: src/main.c:730
+#: src/main.c:769
 msgid "About IesPlus"
 msgstr "Acerca de IesPlus"
 
-#: src/main.c:300
+#: src/main.c:339
 msgid "Are you sure you want to quit IesPlus?"
 msgstr "¿Salir de IesPlus?"
 
-#: src/main.c:448
+#: src/main.c:487
 msgid "New Database"
 msgstr "Nueva base de datos"
 
-#: src/main.c:302
+#: src/main.c:341
 msgid "Question"
 msgstr "Pregunta"
 
-#: src/main.c:192
+#: src/main.c:231
 msgid "_About"
 msgstr "_Acerca de"
 
-#: src/main.c:427 src/main.c:593
+#: src/main.c:466 src/main.c:632
 msgid "_Cancel"
 msgstr "_Cancelar"
 
-#: src/main.c:188
+#: src/main.c:227
 msgid "_Close"
 msgstr "_Cerrar"
 
-#: src/main.c:173
+#: src/main.c:212
 msgid "_Database"
 msgstr "_Base de datos"
 
-#: src/main.c:174
+#: src/main.c:213
 msgid "_Help"
 msgstr "A_yuda"
 
-#: src/main.c:172
+#: src/main.c:211
 msgid "_IesPlus"
 msgstr "_IesPlus"
 
-#: src/main.c:186
+#: src/main.c:225
 msgid "_New"
 msgstr "_Nueva"
 
-#: src/main.c:187 src/main.c:428 src/main.c:594
+#: src/main.c:226 src/main.c:467 src/main.c:633
 msgid "_Open"
 msgstr "_Abrir"
 
-#: src/main.c:182
+#: src/main.c:221
 msgid "_Quit"
 msgstr "_Salir"

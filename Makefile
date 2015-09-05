@@ -285,12 +285,12 @@ $(PODIR)/$(PROGRAM).pot: $(TEXT_SOURCES)
 # Este fichero debe ser editado y traducir las cadenas nuevas o modificar las
 # que se quieran cambiar.
 #  - Si no existe el fichero es_ES.po hay que crearlo con 'msginit'.
-#  - Si ya existe, 'msmerge' se encarga de mezclar el fichero '.pot' con
+#  - Si ya existe, 'msgmerge' se encarga de mezclar el fichero '.pot' con
 #    es_ES.po para respetar las traducciones ya realizadas anteriormente.
 esespofile: $(PODIR)/es_ES.po
 
 $(PODIR)/es_ES.po: $(PODIR)/$(PROGRAM).pot
-	@if [ -f $(PODIR)/es_ES.po ]; then msmerge -s -U $@ $<; \
+	@if [ -f $(PODIR)/es_ES.po ]; then msgmerge -s -U $@ $<; \
 		else msginit -l es_ES.utf8 -o $@ -i $<; fi
 
 # El fichero es_ES.po se codifica en binario y se almacena en el directorio
