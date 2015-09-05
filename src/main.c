@@ -36,6 +36,9 @@ static void activate(GtkApplication* app, gpointer user_data)
 		g_string_append(mainwindow_title, " - ");
 		g_string_append(mainwindow_title, VERSION);
 		gtk_window_set_title(GTK_WINDOW(window), mainwindow_title->str);
+		/* Set the window icon */
+		gtk_window_set_icon(GTK_WINDOW(window),
+		       		main_create_pixbuf(IMAGEDIR"/"ICON_SMALL_FILE));
 		gtk_window_set_default_size(GTK_WINDOW(window), 200, 200);
 		gtk_widget_show_all(window);
 	}
@@ -49,7 +52,6 @@ int main(int argc, char *argv[])
 
 	/*
 	   Internationalization startup:
-	 
 	   - GETTEXT_PACKAGE is the domain defined in "iesplus_i18.h"
 	                     as the "iesplus" domain.
 	   - LOCALEDIR is a constant defined in "Makefile".
@@ -69,7 +71,7 @@ int main(int argc, char *argv[])
 	 */
 	textdomain (GETTEXT_PACKAGE);
 
-	//iesstr_concat3files(&main_window_title, PROGRAM_NAME, "", "");
+	/* Application */
 	app = gtk_application_new(application_id, G_APPLICATION_FLAGS_NONE);
 
 	g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
@@ -78,21 +80,9 @@ int main(int argc, char *argv[])
 
 
 
-//	gchar *main_window_title = NULL;
 //	gpointer datapack[] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL};
 //
-//	/* gtk startup: */
-//	gtk_init(&argc, &argv);
 //
-//	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-//	
-//	iesstr_concat3files(&main_window_title, PROGRAM_NAME, "", "");
-//	
-//	/* PROGRAM_NAME is defined in "main.h" */
-//	gtk_window_set_title(GTK_WINDOW(window), main_window_title);
-//	/* Set the window icon */
-//	gtk_window_set_icon(GTK_WINDOW(window),
-//		       		main_create_pixbuf(IMAGEDIR"/"ICON_SMALL_FILE));
 //
 //	/* Packing window and database pointers into 'datapack' */
 //	datapack[MAIN_PACK_MAIN_WINDOW] = (gpointer) window;
