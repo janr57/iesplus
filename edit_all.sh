@@ -7,7 +7,6 @@
 files="Makefile\
 	.gitignore\
 	src/iesplus_i18.h\
-	src/iesstr.h src/iesstr.c\
 	src/iesdb.h src/iesdb.c\
 	src/main.h src/main.c"
 

@@ -12,7 +12,6 @@
 
 #include "main.h"
 #include "iesdb.h"
-#include "iesstr.h"
 #include "iesplus_i18.h"
 
 static void activate(GtkApplication* app, gpointer user_data)
@@ -503,10 +502,11 @@ void main_cb_new(GtkWidget *widget, gpointer datapack[])
 			fprintf(stderr, "Cannot open create tables");
 		}
 
-		error = iesstr_concat3files(&main_window_title,
-			       	            PROGRAM_NAME,
-					    " - ",
-					    sqlite3_db_filename(db, "main"));
+		//error = iesstr_concat3files(&main_window_title,
+		//	       	            PROGRAM_NAME,
+		//			    " - ",
+		//			    sqlite3_db_filename(db, "main"));
+		
 		if (error)
 			fprintf(stderr, "FIXME: ERROR LONGITUD\n");
 		gtk_window_set_title(GTK_WINDOW(window), main_window_title);
@@ -642,11 +642,11 @@ void main_cb_open(GtkWidget *widget, gpointer datapack[])
 			fprintf(stderr, "Cannot open database\n");
 		}else {
 		
-			error = iesstr_concat3files(&main_window_title,
-			       	            PROGRAM_NAME,
-					    " - ",
-					    "s");
-					    //sqlite3_db_filename(db, "main"));
+			//error = iesstr_concat3files(&main_window_title,
+			//      	            PROGRAM_NAME,
+			//		    " - ",
+			//		    "s");
+			    //sqlite3_db_filename(db, "main"));
 			if (error)
 				fprintf(stderr, "FIXME: ERROR LONGITUD\n");
 
@@ -685,7 +685,7 @@ void main_cb_close(GtkWidget *widget, gpointer datapack[])
 	g_free(main_window_title);
 	datapack[MAIN_PACK_MAIN_WINDOW_TITLE] = (gpointer ) NULL;
 
-	iesstr_concat3files(&main_window_title, PROGRAM_NAME, "", "");
+	//iesstr_concat3files(&main_window_title, PROGRAM_NAME, "", "");
 	gtk_window_set_title(GTK_WINDOW(window), main_window_title);
 
 	main_grayout_close_menu_item(datapack);

@@ -184,7 +184,7 @@ LIBS += -lsqlite3
 
 SOURCES = main.c
 
-OBJECTS = $(SRCDIR)/main.o $(SRCDIR)/iesdb.o $(SRCDIR)/iesstr.o
+OBJECTS = $(SRCDIR)/main.o $(SRCDIR)/iesdb.o
 
 # ----------------------------------------------------------------------------
 #  COMPILING
@@ -211,12 +211,6 @@ $(SRCDIR)/iesdb.o: $(SRCDIR)/iesdb.c $(SRCDIR)/iesdb.h \
 	@$(CC) $(CFLAGS) $(STDC) \
 		-DDBDIR=\"$(databasedir)\" \
 		-DSQL_STRUCT_FILE=\"$(SQL_STRUCT_FILE)\" \
-		-c $< -o $@
-
-$(SRCDIR)/iesstr.o: $(SRCDIR)/iesstr.c $(SRCDIR)/iesstr.h \
-       		$(SRCDIR)/$(PROGRAM)_i18.h
-	@echo $(CCSTR) $(notdir $<)
-	@$(CC) $(CFLAGS) $(STDC) \
 		-c $< -o $@
 
 # We have two options here regarding image creation:
@@ -260,7 +254,6 @@ $(PROGRAM): $(OBJECTS)
 # I18N
 # ------------------------
 TEXT_SOURCES = $(SRCDIR)/main.i $(SRCDIR)/main.h \
-	       $(SRCDIR)/iesstr.i $(SRCDIR)/iesstr.h \
 	       $(SRCDIR)/iesdb.i $(SRCDIR)/iesdb.h
 
 $(SRCDIR)/%.i: $(SRCDIR)/%.c
