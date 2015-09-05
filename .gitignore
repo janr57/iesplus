@@ -8,6 +8,9 @@
 *.o
 *.i
 
+# Created by Makefile
+*.mk
+
 # Image files
 images/*.png
 images/*.svg
